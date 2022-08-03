@@ -2,7 +2,7 @@
 
 Set-up for the Windows PowerShell prompt with [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) and [Scoop](https://github.com/ScoopInstaller/Scoop).
 
-For a tutorial on how to configure the patched nerd fonts and a UNIX-like transparent / acrylic background, check out the [devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM) YouTube video.
+For a tutorial on how to configure the patched [nerd fonts](https://github.com/ryanoasis/nerd-fonts) and a UNIX-like transparent / acrylic background, check out the [devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM) YouTube video.
 
 ## Content
 * Powershell .config
