@@ -3,9 +3,9 @@
 
 # Prompt
 Import-Module posh-git
-oh-my-posh --init --shell pwsh --config "~/AppData/Local/Programs/oh-my-posh/themes/cloud-native-azure.omp.json" | Invoke-Expression
-# $omp_config = Join-Path $PSScriptRoot ".\my_theme.omp.json"
-# oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config "~/AppData/Local/Programs/oh-my-posh/themes/atomic.omp.json" | Invoke-Expression
+$omp_config = "~/Documents/Programming/shell-dotfile/.config/powershell/my_theme.omp.json"
+oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
 
