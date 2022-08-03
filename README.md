@@ -1,4 +1,4 @@
-# My shell dotfiles
+# My PowerShell dotfiles
 
 Set-up for the Windows PowerShell prompt with [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) and [Scoop](https://github.com/ScoopInstaller/Scoop).
 
