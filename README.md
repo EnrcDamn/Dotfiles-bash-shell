@@ -12,6 +12,8 @@ For a tutorial on how to configure the patched [nerd fonts](https://github.com/r
 
 ## PowerShell setup
 
+Installing and setup commands for Oh My Posh are included in the ```.config\powershell\my_profile.ps1``` file.
+
 Scoop installation (for admin installation check out [this](https://github.com/ScoopInstaller/Install#for-admin)):
 
 ```
@@ -44,4 +46,36 @@ $env:USERPROFILE\.config\powershell\my_profile.ps1
 
 ## Bash setup
 
-(to be updated)
+Installing Oh My Posh:
+
+```
+sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+sudo chmod +x /usr/local/bin/oh-my-posh
+```
+
+```
+mkdir ~/.poshthemes
+wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+chmod u+rw ~/.poshthemes/*.omp.*
+rm ~/.poshthemes/themes.zip
+```
+
+Changing permission for Oh My Posh:
+
+```
+cd /usr/local/bin
+sudo chmod 755 oh-my-posh
+```
+
+Adding custom theme to the profile:
+
+```
+vi ~/.profile
+```
+
+Add this command **with the correct path to the user profile**:
+
+```
+eval "$(oh-my-posh init bash --config /PATH/TO/my_profile.omp.json)"
+```
