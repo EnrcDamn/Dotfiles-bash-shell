@@ -14,23 +14,33 @@ For a tutorial on how to configure the patched nerd fonts and a UNIX-like transp
 
 Scoop installation (for admin installation check out [this](https://github.com/ScoopInstaller/Install#for-admin)):
 
-```iwr -useb get.scoop.sh | iex```
+```
+iwr -useb get.scoop.sh | iex
+```
 
 Installing Git:
 
-```winget install -e --id Git.Git```
+```
+winget install -e --id Git.Git
+```
 
 Installing Neovim with Scoop:
 
-```scoop install neovim gcc```
+```
+scoop install neovim gcc
+```
 
 Setting up the custom profile as the CurrentUserCurrentHost profile (for further details about profile, visit the [Microsoft website](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.2)):
 
-```vim $PROFILE.CurrentUserCurrentHost```
+```
+vim $PROFILE.CurrentUserCurrentHost
+```
 
 Modify the profile adding this command:
 
-```$env:USERPROFILE\.config\powershell\my_profile.ps1```
+```
+$env:USERPROFILE\.config\powershell\my_profile.ps1
+```
 
 ## Bash setup
 
