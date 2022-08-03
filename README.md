@@ -6,7 +6,7 @@ For a tutorial on how to configure the patched [nerd fonts](https://github.com/r
 
 ## Content
 * Powershell .config
-* Bash .config (to be updated)
+* Bash .config
 
 ## How to Use
 
