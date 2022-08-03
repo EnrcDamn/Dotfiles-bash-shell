@@ -2,13 +2,15 @@
 
 Set-up for the Windows PowerShell prompt with [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) and [Scoop](https://github.com/ScoopInstaller/Scoop).
 
-For a tutorial on how to configure the patched [nerd fonts](https://github.com/ryanoasis/nerd-fonts) and a UNIX-like transparent / acrylic background, check out the [devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM) YouTube video.
+For a tutorial on how to configure the patched [nerd fonts](https://github.com/ryanoasis/nerd-fonts) and a UNIX-like transparent / acrylic background, check out this [devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM) video.
 
 Bonus: Oh My Posh configuration for the Windows WSL subsystem.
 
+![theme](assets/sample.png)
+
 ## Content
 
-* PowerShell .config
+* PowerShell config
     * Profile
     * Theme ([atomic](https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/atomic.omp.json) modded)
 
@@ -48,7 +50,7 @@ scoop update oh-my-posh
 
 Setting up the custom profile as the CurrentUserCurrentHost profile (for further details about profiles, visit the [Microsoft website](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.2)):
 ```
-vim $PROFILE.CurrentUserCurrentHost
+nvim $PROFILE.CurrentUserCurrentHost
 ```
 
 Modify the profile adding this command (be sure to include **the correct path**):
