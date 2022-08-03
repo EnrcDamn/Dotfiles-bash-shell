@@ -1,8 +1,8 @@
 # My PowerShell dotfiles
 
-Set-up for the Windows PowerShell prompt with [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) and [Scoop](https://github.com/ScoopInstaller/Scoop).
+Set-up for the Windows PowerShell 7.2 prompt with [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh) and [Scoop](https://github.com/ScoopInstaller/Scoop).
 
-For a tutorial on how to configure the patched [nerd fonts](https://github.com/ryanoasis/nerd-fonts) and a UNIX-like transparent / acrylic background, check out this [devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM) video.
+For a tutorial on how to configure the patched [nerd fonts](https://github.com/ryanoasis/nerd-fonts) and a UNIX-like transparent / acrylic background in Windows 11, check out this [devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM) video.
 
 Bonus: Oh My Posh configuration for the Windows WSL subsystem.
 
