@@ -25,34 +25,33 @@ Bonus: Oh My Posh configuration for the Windows WSL subsystem.
 
 ## PowerShell setup
 
-Installing and setup commands for Oh My Posh are included in the ```.config\powershell\my_profile.ps1``` file.
-
 Scoop installation (for admin installation check out [this](https://github.com/ScoopInstaller/Install#for-admin)):
-
 ```
 iwr -useb get.scoop.sh | iex
 ```
 
 Installing Git:
-
 ```
 winget install -e --id Git.Git
 ```
 
 Installing Neovim with Scoop:
-
 ```
 scoop install neovim gcc
 ```
 
-Setting up the custom profile as the CurrentUserCurrentHost profile (for further details about profiles, visit the [Microsoft website](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.2)):
+Installing Oh My Posh:
+```
+scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
+scoop update oh-my-posh
+```
 
+Setting up the custom profile as the CurrentUserCurrentHost profile (for further details about profiles, visit the [Microsoft website](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.2)):
 ```
 vim $PROFILE.CurrentUserCurrentHost
 ```
 
 Modify the profile adding this command (be sure to include **the correct path**):
-
 ```
 . $env:USERPROFILE\PATH\TO\.config\powershell\my_profile.ps1
 ```
@@ -60,7 +59,6 @@ Modify the profile adding this command (be sure to include **the correct path**)
 ## WSL Bash setup
 
 Installing Oh My Posh:
-
 ```
 sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
 sudo chmod +x /usr/local/bin/oh-my-posh
@@ -75,20 +73,17 @@ rm ~/.poshthemes/themes.zip
 ```
 
 Changing permission for Oh My Posh:
-
 ```
 cd /usr/local/bin
 sudo chmod 755 oh-my-posh
 ```
 
 Adding custom theme to the profile:
-
 ```
 vi ~/.profile
 ```
 
 Add this command **with the correct path** to the user profile:
-
 ```
 eval "$(oh-my-posh init bash)"
 ```
